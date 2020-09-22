@@ -22,6 +22,12 @@ npm install -g nodemon
 npm run start
 ```
 
+### 部署发布
+```
+npm run deploy
+
+```
+
 编写前需要 git pull 拉去代码，避免冲突。
 
 
