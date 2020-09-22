@@ -2,7 +2,8 @@
   "scripts": {
     "start": "nodemon --watch docs/.vuepress/config.js launch.js",
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh"
   },
   "dependencies": {
     "prismjs": "^1.16.0",
