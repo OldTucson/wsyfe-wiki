@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: logo2.jpg
+heroImage: img/logo2.jpg
 description: Repository Of WSY-FE 
 actionText: 速查 →
 actionLink: /TOOLS/CSS/滚动条样式
