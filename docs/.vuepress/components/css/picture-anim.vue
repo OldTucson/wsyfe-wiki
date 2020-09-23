@@ -1,7 +1,7 @@
 <template>
   <div>
     序列图：
-    <img class="anim-img" src="/img/fire.png" alt="anim" />
+    <img class="anim-img" src="/fire.png" alt="anim" />
     动画：
     <div class="anim"></div>
   </div>
@@ -14,7 +14,7 @@
 .anim {
   width: 149px;
   height: 185px;
-  background: url(/img/fire.png);
+  background: url(/fire.png);
   animation: rotate 3s steps(31) infinite;
 }
 @keyframes rotate {

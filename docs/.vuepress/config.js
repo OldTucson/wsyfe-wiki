@@ -20,20 +20,22 @@ module.exports = {
       },
       {
         text: "项目",
-        link: "/PROJECT/COMMON/common"
+        link: "/PROJECT/网商搜小程序/小程序开发复盘"
       }
     ],
     sidebarDepth: 1,
     sidebar: {
       "/PROJECT/": [
         {
-          title: "common",
-          children: ["COMMON/common"]
+          title: "🌵网商搜小程序",
+          children: [
+            "网商搜小程序/小程序开发复盘"
+          ]
         }
       ],
       "/TOOLS/": [
         {
-          title: "CSS",
+          title: "🎉CSS",
           children: [
             "CSS/滚动条样式",
             "CSS/文字超出显示省略号",
@@ -48,7 +50,7 @@ module.exports = {
           ]
         },
         {
-          title: "JS",
+          title: "🔗JS",
           children: [
             "JS/setTimeout模拟setInterval",
             "JS/节流与防抖",
@@ -62,11 +64,11 @@ module.exports = {
           ]
         },
         {
-          title: "HTML",
+          title: "📄HTML",
           children: [["HTML/mate标签设置", "mate标签设置"]]
         },
         {
-          title: "工具",
+          title: "🔧工具",
           children: [
             "TOOL/css三角形生成器",
             "TOOL/RGB与十六进制颜色转换",
@@ -75,7 +77,7 @@ module.exports = {
           ]
         },
         {
-          title: "解决方案",
+          title: "💡解决方案",
           children: [
             "SOLUTION/rem适配方案",
             ["SOLUTION/postcss适配方案", "postcss适配方案."],
@@ -84,7 +86,7 @@ module.exports = {
           ]
         },
         {
-          title: "链接",
+          title: "🌏链接",
           children: ["LINK/常用链接"]
         }
       ]

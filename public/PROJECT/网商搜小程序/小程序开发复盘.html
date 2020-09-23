@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>小程序开发复盘 | WSY-FE-WIKI</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.dd70faed.css" as="style"><link rel="preload" href="/assets/js/app.2badb00a.js" as="script"><link rel="preload" href="/assets/js/3.636285eb.js" as="script"><link rel="preload" href="/assets/js/18.44ce8b08.js" as="script"><link rel="prefetch" href="/assets/js/1.b61ea5b4.js"><link rel="prefetch" href="/assets/js/10.4653d399.js"><link rel="prefetch" href="/assets/js/11.e0cf75b6.js"><link rel="prefetch" href="/assets/js/12.0603cefb.js"><link rel="prefetch" href="/assets/js/13.a57d0b0d.js"><link rel="prefetch" href="/assets/js/14.fba880c4.js"><link rel="prefetch" href="/assets/js/15.0c6d4826.js"><link rel="prefetch" href="/assets/js/16.0af48f1f.js"><link rel="prefetch" href="/assets/js/17.83c3eee0.js"><link rel="prefetch" href="/assets/js/19.f4bdaae9.js"><link rel="prefetch" href="/assets/js/20.daf45852.js"><link rel="prefetch" href="/assets/js/21.9382376f.js"><link rel="prefetch" href="/assets/js/22.d4502c87.js"><link rel="prefetch" href="/assets/js/23.99cb70fb.js"><link rel="prefetch" href="/assets/js/24.988ea48a.js"><link rel="prefetch" href="/assets/js/25.21409f9a.js"><link rel="prefetch" href="/assets/js/26.d7bbd050.js"><link rel="prefetch" href="/assets/js/27.36856e02.js"><link rel="prefetch" href="/assets/js/28.b4284bc8.js"><link rel="prefetch" href="/assets/js/29.57932808.js"><link rel="prefetch" href="/assets/js/30.a1bdcb25.js"><link rel="prefetch" href="/assets/js/31.396b060a.js"><link rel="prefetch" href="/assets/js/32.e3e8f27e.js"><link rel="prefetch" href="/assets/js/33.20ab8384.js"><link rel="prefetch" href="/assets/js/34.34fadd15.js"><link rel="prefetch" href="/assets/js/35.4b7443ec.js"><link rel="prefetch" href="/assets/js/36.bd250dea.js"><link rel="prefetch" href="/assets/js/37.ce5df789.js"><link rel="prefetch" href="/assets/js/38.dc13c665.js"><link rel="prefetch" href="/assets/js/39.7dba70d2.js"><link rel="prefetch" href="/assets/js/4.2f42eab8.js"><link rel="prefetch" href="/assets/js/40.7c915dac.js"><link rel="prefetch" href="/assets/js/41.b4f96f3e.js"><link rel="prefetch" href="/assets/js/42.3be92ad9.js"><link rel="prefetch" href="/assets/js/43.3246cfd4.js"><link rel="prefetch" href="/assets/js/44.872fdcee.js"><link rel="prefetch" href="/assets/js/45.e5f8d9ce.js"><link rel="prefetch" href="/assets/js/46.4838c691.js"><link rel="prefetch" href="/assets/js/47.78e92fea.js"><link rel="prefetch" href="/assets/js/48.a8c53d2e.js"><link rel="prefetch" href="/assets/js/49.5609dc7d.js"><link rel="prefetch" href="/assets/js/5.bf265ab8.js"><link rel="prefetch" href="/assets/js/6.aa38240b.js"><link rel="prefetch" href="/assets/js/7.b33b5570.js"><link rel="prefetch" href="/assets/js/8.f875385a.js"><link rel="prefetch" href="/assets/js/9.5c9ce796.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.dd70faed.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">WSY-FE-WIKI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/TOOLS/CSS/滚动条样式.html" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/PROJECT/网商搜小程序/小程序开发复盘.html" class="nav-link">
+  项目
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/TOOLS/CSS/滚动条样式.html" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/PROJECT/网商搜小程序/小程序开发复盘.html" class="nav-link">
+  项目
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>🌵网商搜小程序</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/PROJECT/网商搜小程序/小程序开发复盘.html" class="active sidebar-link">小程序开发复盘</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/PROJECT/网商搜小程序/小程序开发复盘.html#📝-需求场景" class="sidebar-link">📝 需求场景</a></li><li class="sidebar-sub-header"><a href="/PROJECT/网商搜小程序/小程序开发复盘.html#⭐-收获的技巧" class="sidebar-link">⭐ 收获的技巧</a></li><li class="sidebar-sub-header"><a href="/PROJECT/网商搜小程序/小程序开发复盘.html#💡-遇到的问题" class="sidebar-link">💡 遇到的问题</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="📝-需求场景"><a href="#📝-需求场景" class="header-anchor">#</a> 📝 需求场景</h2> <p>网商搜小程序版应用开发，涉及功能有账户体系、用户下单流程、订单售后流程等</p> <h2 id="⭐-收获的技巧"><a href="#⭐-收获的技巧" class="header-anchor">#</a> ⭐ 收获的技巧</h2> <h3 id="_1-微信登录流程"><a href="#_1-微信登录流程" class="header-anchor">#</a> 1.微信登录流程</h3> <blockquote><p>📍 流程图</p></blockquote> <p><img src="/login-er.jpg" alt="流程图"></p> <p>🔧 具体实现</p> <blockquote><p>基本样式</p></blockquote> <p><img src="/login-style.jpg" alt="基本样式"></p> <blockquote><p>为按钮绑定对应的 open-type 和 bindgetuserinfo 属性即可缺省式地（有授权则不唤起）唤起微信获取信息授权弹框</p></blockquote> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">open-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>getUserInfo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">bindgetuserinfo</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bindGetUserInfo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span><span class="token punctuation">&gt;</span></span>微信用户快捷登录<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+//如果是手机号登录则需要先绑定手机号
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">open-type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>getPhoneNumber<span class="token punctuation">&quot;</span></span> <span class="token attr-name">bindgetphonenumber</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>getPhoneNumber<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  绑定手机
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 点击授权</span>
+  <span class="token function">bindGetUserInfo</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> userInfo <span class="token operator">=</span> e<span class="token punctuation">.</span>detail<span class="token punctuation">.</span>userInfo<span class="token punctuation">;</span>
+    <span class="token comment">// 点击同意授权</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>userInfo<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      wx<span class="token punctuation">.</span><span class="token function">setStorageSync</span><span class="token punctuation">(</span><span class="token string">&quot;userInfo&quot;</span><span class="token punctuation">,</span> userInfo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      wx<span class="token punctuation">.</span><span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          <span class="token operator">...</span><span class="token comment">//登录逻辑</span>
+          <span class="token comment">//如果是手机号登录则需请求服务端判断是否已绑定手机</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+               <span class="token comment">//手机号授权</span>
+  <span class="token function">getPhoneNumber</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>e<span class="token punctuation">.</span>detail<span class="token punctuation">.</span>encryptedData <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>e<span class="token punctuation">.</span>detail<span class="token punctuation">.</span>iv<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> <span class="token punctuation">{</span>
+      avatarUrl<span class="token punctuation">,</span>
+      nickName
+    <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>userInfo
+    wx<span class="token punctuation">.</span><span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> <span class="token punctuation">{</span>
+          code
+        <span class="token punctuation">}</span> <span class="token operator">=</span> res
+
+        <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+          code<span class="token punctuation">,</span>
+          encryptedData<span class="token operator">:</span> e<span class="token punctuation">.</span>detail<span class="token punctuation">.</span>encryptedData<span class="token punctuation">,</span>
+          iv<span class="token operator">:</span> e<span class="token punctuation">.</span>detail<span class="token punctuation">.</span>iv<span class="token punctuation">,</span>
+          nick<span class="token operator">:</span> nickName<span class="token punctuation">,</span>
+          cover<span class="token operator">:</span> avatarUrl
+        <span class="token punctuation">}</span>
+        <span class="token comment">//从授权信息中获取数据发送给服务端进行绑定或注册操作</span>
+        <span class="token constant">XXXXX</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+					<span class="token operator">...</span>
+          <span class="token comment">//成功后将服务端返回的token做本地存储</span>
+          <span class="token keyword">let</span> access_token <span class="token operator">=</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>access_token
+          wx<span class="token punctuation">.</span><span class="token function">setStorageSync</span><span class="token punctuation">(</span><span class="token string">&quot;token&quot;</span><span class="token punctuation">,</span> access_token<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><blockquote><p>封装登录拦截函数</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">isLogin</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">shouldJump <span class="token operator">=</span> <span class="token boolean">false</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> token <span class="token operator">=</span> wx<span class="token punctuation">.</span><span class="token function">getStorageSync</span><span class="token punctuation">(</span><span class="token string">&quot;token&quot;</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>token<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>shouldJump<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      wx<span class="token punctuation">.</span><span class="token function">navigateTo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        url<span class="token operator">:</span> <span class="token string">&quot;/pages/login/login&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="_2-微信支付流程"><a href="#_2-微信支付流程" class="header-anchor">#</a> 2.微信支付流程</h3> <p>🔧 具体实现</p> <blockquote><p>根据业务场景需要，项目中的支付可进行账户余额+加微信支付的混合支付方式，这里不做赘述，只对微信支付部分进行分析</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">WeiXinPay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//微信支付逻辑/微信额外支付</span>
+    <span class="token keyword">let</span> that <span class="token operator">=</span> <span class="token keyword">this</span>
+    wx<span class="token punctuation">.</span><span class="token function">login</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+          <span class="token keyword">let</span> <span class="token punctuation">{</span>
+            order_id<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span> <span class="token operator">=</span> that<span class="token punctuation">.</span>data
+          <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token punctuation">{</span>
+            order_id<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>order_id<span class="token punctuation">)</span><span class="token punctuation">,</span>
+          <span class="token punctuation">}</span>
+          <span class="token comment">//向服务端发送订单ID换取用于微信支付的信息</span>
+          <span class="token function">reqGetWeixinPayInfo</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>code <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">let</span> <span class="token punctuation">{</span>
+                nonceStr<span class="token punctuation">,</span>
+                signType<span class="token punctuation">,</span>
+                timeStamp<span class="token punctuation">,</span>
+                sign<span class="token punctuation">,</span>
+                trade_sn
+              <span class="token punctuation">}</span> <span class="token operator">=</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data
+              <span class="token keyword">let</span> package1 <span class="token operator">=</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data<span class="token punctuation">.</span>package <span class="token comment">//直接用package解构会报关键字的错误 故这里使用这种憨憨写法</span>
+              wx<span class="token punctuation">.</span><span class="token function">requestPayment</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                <span class="token comment">// 时间戳</span>
+                timeStamp<span class="token punctuation">,</span>
+                <span class="token comment">// 随机字符串</span>
+                nonceStr<span class="token punctuation">,</span>
+                <span class="token comment">// 统一下单接口返回的 prepay_id 参数值</span>
+                <span class="token keyword">package</span><span class="token operator">:</span> package1<span class="token punctuation">,</span>
+                <span class="token comment">// 签名类型</span>
+                signType<span class="token punctuation">,</span>
+                <span class="token comment">// 签名</span>
+                paySign<span class="token operator">:</span> sign<span class="token punctuation">,</span>
+                <span class="token comment">// 调用成功回调</span>
+                <span class="token function">success</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  <span class="token comment">//支付成功后的逻辑</span>
+                  <span class="token comment">//微信API提供的支付成功回调并不能作为真正支付成功的判断</span>
+                  <span class="token comment">//正确的做法是在回调中向服务端请求支付状态</span>
+                  that<span class="token punctuation">.</span><span class="token function">getPayStatus</span><span class="token punctuation">(</span><span class="token punctuation">{</span>trade_sn<span class="token punctuation">}</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token comment">// 失败回调</span>
+                <span class="token function">fail</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  that<span class="token punctuation">.</span><span class="token function">getPayStatus</span><span class="token punctuation">(</span><span class="token punctuation">{</span>trade_sn<span class="token punctuation">}</span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token comment">// 接口调用结束回调</span>
+                <span class="token function">complete</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+              wx<span class="token punctuation">.</span><span class="token function">showToast</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                title<span class="token operator">:</span> res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>message<span class="token punctuation">,</span>
+                icon<span class="token operator">:</span> <span class="token string">'none'</span>
+              <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><h3 id="_3-小程序内的滑动删除功能"><a href="#_3-小程序内的滑动删除功能" class="header-anchor">#</a> 3.小程序内的滑动删除功能</h3> <p>🔧 具体实现</p> <blockquote><p>根据实际应用场景封装用于滑动拖拽的类</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">TouchesNormal</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+  <span class="token function">_getIndex</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获取滑动列表的下标值</span>
+    <span class="token keyword">return</span> e<span class="token punctuation">.</span>currentTarget<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>index<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">_getMoveX</span><span class="token punctuation">(</span><span class="token parameter">e<span class="token punctuation">,</span> startX</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获取滑动过程中滑动的距离</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">getClientX</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token operator">-</span> startX<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">_getEndX</span><span class="token punctuation">(</span><span class="token parameter">e<span class="token punctuation">,</span> startX</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获取滑动结束滑动的距离</span>
+    <span class="token keyword">let</span> touch <span class="token operator">=</span> e<span class="token punctuation">.</span>changedTouches<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>touch<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> touch<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>clientX <span class="token operator">-</span> startX<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">_resetData</span><span class="token punctuation">(</span><span class="token parameter">dataList</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 重置数据， 把所有的列表 left 置为 0</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token keyword">in</span> dataList<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      dataList<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> dataList<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token function">getClientX</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 获取滑动的横坐标</span>
+    <span class="token keyword">let</span> touch <span class="token operator">=</span> e<span class="token punctuation">.</span>touches<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>touch<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> touch<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>clientX<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">touchM</span><span class="token punctuation">(</span><span class="token parameter">e<span class="token punctuation">,</span> dataList<span class="token punctuation">,</span> startX</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// touchmove 过程中更新列表数据</span>
+    <span class="token keyword">let</span> list <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_resetData</span><span class="token punctuation">(</span>dataList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> <span class="token punctuation">{</span> goodsindex <span class="token punctuation">}</span> <span class="token operator">=</span> e<span class="token punctuation">.</span>currentTarget<span class="token punctuation">.</span>dataset<span class="token punctuation">;</span>
+    list<span class="token punctuation">[</span>goodsindex<span class="token punctuation">]</span><span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_getMoveX</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span> startX<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> list<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">touchE</span><span class="token punctuation">(</span><span class="token parameter">e<span class="token punctuation">,</span> dataList<span class="token punctuation">,</span> startX<span class="token punctuation">,</span> width</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// touchend 更新列表数据</span>
+    <span class="token keyword">let</span> list <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_resetData</span><span class="token punctuation">(</span>dataList<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> disX <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_getEndX</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span> startX<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>disX <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 判断滑动方向， （向左滑动）</span>
+      <span class="token comment">// 滑动的距离大于删除宽度的一半就显示操作列表 否则不显示</span>
+      Math<span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>disX<span class="token punctuation">)</span> <span class="token operator">&gt;</span> width <span class="token operator">/</span> <span class="token number">2</span> <span class="token operator">?</span> <span class="token punctuation">(</span>left <span class="token operator">=</span> <span class="token operator">-</span>width<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token punctuation">(</span>left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 向右滑动复位</span>
+      left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> <span class="token punctuation">{</span> goodsindex <span class="token punctuation">}</span> <span class="token operator">=</span> e<span class="token punctuation">.</span>currentTarget<span class="token punctuation">.</span>dataset<span class="token punctuation">;</span>
+    list<span class="token punctuation">[</span>goodsindex<span class="token punctuation">]</span><span class="token punctuation">.</span>left <span class="token operator">=</span> left<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> list<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">deleteItem</span><span class="token punctuation">(</span><span class="token parameter">e<span class="token punctuation">,</span> dataList</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 删除功能</span>
+    dataList<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_getIndex</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> dataList<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> TouchesNormal<span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>将其挂载挂载至 app.js 中</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//app.js</span>
+<span class="token operator">...</span>
+<span class="token keyword">import</span> TouchesNormal <span class="token keyword">from</span> <span class="token string">'./utils/TouchesNormal.js'</span>
+<span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function-variable function">onLaunch</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">params</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token operator">...</span>
+  globalData<span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  TouchesNormal<span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">TouchesNormal</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><blockquote><p>在页面中引用</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">getApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    cardList<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//银行卡列表</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">//解绑</span>
+  <span class="token function">unbindAccount</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span><span class="token comment">//相关操作逻辑</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function-variable function">touchS</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// touchstart</span>
+    <span class="token keyword">let</span> startX <span class="token operator">=</span> app<span class="token punctuation">.</span>TouchesNormal<span class="token punctuation">.</span><span class="token function">getClientX</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span>
+    startX <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      startX
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">touchM</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// touchmove</span>
+    <span class="token operator">...</span>
+    <span class="token keyword">let</span> cardList <span class="token operator">=</span> app<span class="token punctuation">.</span>TouchesNormal<span class="token punctuation">.</span><span class="token function">touchM</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>cardList<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>startX<span class="token punctuation">)</span>
+      cardList <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        cardList
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">touchE</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// touchend</span>
+    <span class="token operator">...</span>
+    <span class="token keyword">let</span> width <span class="token operator">=</span> <span class="token number">80</span> <span class="token comment">// 定义操作列表宽度 此处宽度要与页面中滑动操作项宽度一致</span>
+    <span class="token keyword">let</span> cardList <span class="token operator">=</span> app<span class="token punctuation">.</span>TouchesNormal<span class="token punctuation">.</span><span class="token function">touchE</span><span class="token punctuation">(</span>e<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>cardList<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>data<span class="token punctuation">.</span>startX<span class="token punctuation">,</span> width<span class="token punctuation">)</span>
+    cardList <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setData</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      cardList
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>页面布局：</p> <p>最外层父级容器使用 position:relative</p> <p>展示容器和操作项容器都是用绝对定位 position:absolute 并且宽度都与父容器一致</p> <p>最后将展示容器的 z-index 设置得比操作项容器的更大即可</p> <blockquote><p>动态地为展示容器修改绝对定位的 left 属性即可实现最终效果</p></blockquote> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span>
+  <span class="token attr-name"><span class="token namespace">wx:</span>for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{{cardList}}<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">wx:</span>for-item</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>cardItem<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">wx:</span>for-index</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>cardIndex<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name"><span class="token namespace">wx:</span>key</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{{cardIndex}}<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span>
+    <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>list-item {{<span class="token punctuation">'</span>list-item<span class="token punctuation">'</span> + cardIndex%3}}<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">data-goodsindex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{{cardIndex}}<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">bindtouchstart</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>touchS<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">bindtouchmove</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>touchM<span class="token punctuation">&quot;</span></span>
+    <span class="token attr-name">bindtouchend</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>touchE<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name">
+    <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token selector">left:</span><span class="token punctuation">{</span><span class="token punctuation">{</span>cardItem.left + <span class="token string">'rpx'</span><span class="token punctuation">}</span><span class="token punctuation">}</span></span><span class="token punctuation">&quot;</span></span>
+  <span class="token punctuation">&gt;</span></span>
+    ...//展示容器
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>option-item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    ...//操作项
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">catchtap</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>unbindAccount<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{{cardItem.id}}<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>删除<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="_4-小程序内解析-html"><a href="#_4-小程序内解析-html" class="header-anchor">#</a> 4.小程序内解析 HTML</h3> <p>📍 小程序项目中涉及到用户协议等业务通常是使用已有的通用 HTML 模板，但在小程序中使用 HTML 需要做一步额外的处理工作</p> <p>🔧 具体实现</p> <p><a href="https://github.com/icindy/wxParse" target="_blank" rel="noopener noreferrer">下载 wxParse.js 文件并引入项目中<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <blockquote><p>在需要解析 HTML 的页面中引用</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pages/schoolDetail/schoolDetail.js</span>
+<span class="token keyword">var</span> WxParse <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;../../../wxParse/wxParse.js&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">getApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">Page</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token comment">/**
+   * 页面的初始数据
+   */</span>
+  data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    article<span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token comment">/**
+   * 生命周期函数--监听页面加载
+   */</span>
+  <span class="token function-variable function">onLoad</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">//复制HTML并进行解析</span>
+    <span class="token keyword">let</span> article <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;div id=&quot;u8&quot; class=&quot;text&quot; style=&quot;visibility: visible;&quot;&gt;...&lt;/div&gt;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+    WxParse<span class="token punctuation">.</span><span class="token function">wxParse</span><span class="token punctuation">(</span><span class="token string">&quot;article&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;html&quot;</span><span class="token punctuation">,</span> article<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// this.setData({article})</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>在 app.wxss 或在对应的样式链表中引入 wxParse.wxss</p></blockquote> <div class="language-css extra-class"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@import</span> <span class="token string">&quot;../../../wxParse/wxParse.wxss&quot;</span><span class="token punctuation">;</span></span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>隐私协议<span class="token punctuation">&quot;</span></span> <span class="token attr-name">backBull</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>import</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>../../../wxParse/wxParse.wxml<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>protocol-wrap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>title<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    隐私政策
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>line<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">is</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>wxParse<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{{wxParseData:article.nodes}}<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="_5-小程序跳转公众号文章"><a href="#_5-小程序跳转公众号文章" class="header-anchor">#</a> 5.小程序跳转公众号文章</h3> <p>🔧 具体实现</p> <p>只需单独新建一个 page 在其中添加 webview 容器即可</p> <blockquote><p>SRC 链接为要跳转的公众号文章链接</p></blockquote> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>web-view</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://mp.weixin.qq.com/s/bK_0v-GQ1b0GlUx1uQUtlg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>web-view</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="💡-遇到的问题"><a href="#💡-遇到的问题" class="header-anchor">#</a> 💡 遇到的问题</h2> <ol><li>IOS 环境下调用 wx.navigateBack()时会出现直接退出小程序的情况</li></ol> <p>⛔ 问题原因：排除小程序堆栈限制问题及生命周期相关兼容性问题，暂未发现问题原因</p> <p>✅ 解决方案：牺牲交互选择 wx.redirectTo()进行页面跳转以兼容此种场景</p> <ol start="2"><li>IOS 环境下 iPhoneX 及相似机型底部操作栏会出现空白间隙</li></ol> <p>⛔ 问题原因：未针对部分 IOS 机型做底部安全距离适配</p> <p>✅ 解决方案：以一个用绝对定位样式的底部操作按钮为例</p> <div class="language-css extra-class"><pre class="language-css"><code> <span class="token punctuation">{</span>
+  <span class="token property">position</span><span class="token punctuation">:</span> fixed<span class="token punctuation">;</span>
+  <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+  <span class="token property">bottom</span><span class="token punctuation">:</span> 90rpx<span class="token punctuation">;</span>
+  ----&gt;这三种情况都必须按照顺序写<span class="token punctuation">,</span><span class="token property">否则不生效bottom</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>
+    <span class="token function">constant</span><span class="token punctuation">(</span>safe-area-inset-bottom<span class="token punctuation">)</span> + 90rpx
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ----&gt;padding/<span class="token property">margin等样式同理bottom</span><span class="token punctuation">:</span> <span class="token function">calc</span><span class="token punctuation">(</span>
+    <span class="token function">env</span><span class="token punctuation">(</span>safe-area-inset-bottom<span class="token punctuation">)</span> + 90rpx
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ----&gt;<span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="3"><li>不同机型情况下页面顶部的操作栏会出现间隙或高度不对的情况</li></ol> <p>⛔ 问题原因：各机型状态栏高度不同未适配</p> <p>✅ 解决方案：动态获取设备状态栏高度并为操作栏动态设置</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//app.js</span>
+wx<span class="token punctuation">.</span><span class="token function">getSystemInfo</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function-variable function">success</span><span class="token operator">:</span> <span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>globalData<span class="token punctuation">.</span>statusBarHeight <span class="token operator">=</span> res<span class="token punctuation">.</span>statusBarHeight<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">...</span>
+globalData<span class="token operator">:</span> <span class="token punctuation">{</span>
+    statusBarHeight<span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code>//动态设置操作栏高度
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span>
+  <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>我的订单<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">backBull</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>true<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">isFromTransfer</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{{isFromTransfer}}<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>view</span>
+  <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>option-block<span class="token punctuation">&quot;</span></span><span class="token style-attr language-css"><span class="token attr-name">
+  <span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token property">position</span><span class="token punctuation">:</span>fixed<span class="token punctuation">;</span><span class="token property">left</span><span class="token punctuation">:</span>0<span class="token selector">;top:</span><span class="token punctuation">{</span><span class="token punctuation">{</span>optionTop<span class="token punctuation">}</span><span class="token punctuation">}</span>rpx<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>view</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token operator">...</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">getApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+data<span class="token operator">:</span> <span class="token punctuation">{</span>
+    optionTop<span class="token operator">:</span> app<span class="token punctuation">.</span>globalData<span class="token punctuation">.</span>statusBarHeight
+ <span class="token punctuation">}</span>
+ <span class="token operator">...</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2badb00a.js" defer></script><script src="/assets/js/3.636285eb.js" defer></script><script src="/assets/js/18.44ce8b08.js" defer></script>
+  </body>
+</html>

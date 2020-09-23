@@ -44,7 +44,7 @@
   display: none;
 }
 .choose-group-input:checked + .choose-group-icon {
-  background: url(/img/selected-icon.png);
+  background: url(/selected-icon.png);
   background-size: 100% 100%;
 }
 </style>
