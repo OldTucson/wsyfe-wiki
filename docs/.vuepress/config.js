@@ -2,6 +2,7 @@ module.exports = {
   title: "WSY-FE-WIKI",
   base: "/",
   dest: "public",
+  plugins: ['@vuepress/back-to-top'],
   head: [
     [
       "link",

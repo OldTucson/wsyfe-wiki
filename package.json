@@ -8,5 +8,8 @@
   "dependencies": {
     "prismjs": "^1.16.0",
     "vuepress": "^1.0.2"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.4"
   }
 }
