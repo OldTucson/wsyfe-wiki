@@ -59,9 +59,11 @@ module.exports = {
             "JS/科学计算",
             "JS/MD5加密",
             "JS/深浅拷贝",
+            "JS/更多",
             ["JS/封装cookie操作", "封装cookie操作"],
             ["JS/localStorage封装", "localStorage封装"],
-            ["JS/完整axios封装含token", "完整axios封装含token"]
+            ["JS/完整axios封装含token", "完整axios封装含token"],
+            
           ]
         },
         {
@@ -74,12 +76,15 @@ module.exports = {
             "TOOL/css三角形生成器",
             "TOOL/RGB与十六进制颜色转换",
             "TOOL/字符串转unicode",
-            "TOOL/Fiddler手机抓包"
+            "TOOL/Fiddler手机抓包",
+            "TOOL/使用docker",
+            "TOOL/使用NRM管理NPM镜像源"
           ]
         },
         {
           title: "💡解决方案",
           children: [
+            ["SOLUTION/JS设计模式总结","JS设计模式总结"],
             "SOLUTION/rem适配方案",
             ["SOLUTION/postcss适配方案", "postcss适配方案."],
             "SOLUTION/与移动端的交互",

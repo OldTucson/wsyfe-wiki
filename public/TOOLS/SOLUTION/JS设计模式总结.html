@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS设计模式总结 | WSY-FE-WIKI</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="description" content="">
+    <link rel="preload" href="/assets/css/0.styles.bb210f8d.css" as="style"><link rel="preload" href="/assets/js/app.6cedf5e5.js" as="script"><link rel="preload" href="/assets/js/3.2c4a51d3.js" as="script"><link rel="preload" href="/assets/js/43.7c335d33.js" as="script"><link rel="prefetch" href="/assets/js/1.ea282701.js"><link rel="prefetch" href="/assets/js/10.7cfbaa16.js"><link rel="prefetch" href="/assets/js/11.f435db7c.js"><link rel="prefetch" href="/assets/js/12.c180b3df.js"><link rel="prefetch" href="/assets/js/13.317ba21d.js"><link rel="prefetch" href="/assets/js/14.088d3929.js"><link rel="prefetch" href="/assets/js/15.cf2cb169.js"><link rel="prefetch" href="/assets/js/16.8a0e587b.js"><link rel="prefetch" href="/assets/js/17.0ad8b2d3.js"><link rel="prefetch" href="/assets/js/18.42ad0c20.js"><link rel="prefetch" href="/assets/js/19.decf678c.js"><link rel="prefetch" href="/assets/js/20.43485b7d.js"><link rel="prefetch" href="/assets/js/21.64b13b1f.js"><link rel="prefetch" href="/assets/js/22.428c09a7.js"><link rel="prefetch" href="/assets/js/23.3953fbcb.js"><link rel="prefetch" href="/assets/js/24.8d5f7a16.js"><link rel="prefetch" href="/assets/js/25.ca74194b.js"><link rel="prefetch" href="/assets/js/26.dc0d426c.js"><link rel="prefetch" href="/assets/js/27.2f22ddc0.js"><link rel="prefetch" href="/assets/js/28.91f4c80d.js"><link rel="prefetch" href="/assets/js/29.d699e82d.js"><link rel="prefetch" href="/assets/js/30.30abc996.js"><link rel="prefetch" href="/assets/js/31.e9429980.js"><link rel="prefetch" href="/assets/js/32.acb3c9db.js"><link rel="prefetch" href="/assets/js/33.75b09251.js"><link rel="prefetch" href="/assets/js/34.9f2b063e.js"><link rel="prefetch" href="/assets/js/35.309b3741.js"><link rel="prefetch" href="/assets/js/36.bfd93081.js"><link rel="prefetch" href="/assets/js/37.6b37a491.js"><link rel="prefetch" href="/assets/js/38.15953f9c.js"><link rel="prefetch" href="/assets/js/39.49277fbd.js"><link rel="prefetch" href="/assets/js/4.3243bfa8.js"><link rel="prefetch" href="/assets/js/40.c1f38e45.js"><link rel="prefetch" href="/assets/js/41.15d78334.js"><link rel="prefetch" href="/assets/js/42.c28445e8.js"><link rel="prefetch" href="/assets/js/44.38cbfa17.js"><link rel="prefetch" href="/assets/js/45.5d106631.js"><link rel="prefetch" href="/assets/js/46.108103ed.js"><link rel="prefetch" href="/assets/js/47.a22fa220.js"><link rel="prefetch" href="/assets/js/48.87765025.js"><link rel="prefetch" href="/assets/js/49.627060fc.js"><link rel="prefetch" href="/assets/js/5.8b508fa4.js"><link rel="prefetch" href="/assets/js/50.8266b4c9.js"><link rel="prefetch" href="/assets/js/51.1a3efe4b.js"><link rel="prefetch" href="/assets/js/52.d90d4dbf.js"><link rel="prefetch" href="/assets/js/6.6bf382ac.js"><link rel="prefetch" href="/assets/js/7.fd51492f.js"><link rel="prefetch" href="/assets/js/8.578500fd.js"><link rel="prefetch" href="/assets/js/9.73291264.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bb210f8d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">WSY-FE-WIKI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/TOOLS/CSS/滚动条样式.html" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/PROJECT/网商搜小程序/小程序开发复盘.html" class="nav-link">
+  项目
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/TOOLS/CSS/滚动条样式.html" class="nav-link">
+  工具
+</a></div><div class="nav-item"><a href="/PROJECT/网商搜小程序/小程序开发复盘.html" class="nav-link">
+  项目
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🎉CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🔗JS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📄HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🔧工具</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>💡解决方案</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/TOOLS/SOLUTION/JS设计模式总结.html" class="active sidebar-link">JS设计模式总结</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/TOOLS/SOLUTION/JS设计模式总结.html#简单工厂模式" class="sidebar-link">简单工厂模式</a></li><li class="sidebar-sub-header"><a href="/TOOLS/SOLUTION/JS设计模式总结.html#抽象工厂模式" class="sidebar-link">抽象工厂模式</a></li><li class="sidebar-sub-header"><a href="/TOOLS/SOLUTION/JS设计模式总结.html#单例模式" class="sidebar-link">单例模式</a></li><li class="sidebar-sub-header"><a href="/TOOLS/SOLUTION/JS设计模式总结.html#vuex中的单例模式" class="sidebar-link">VueX中的单例模式</a></li><li class="sidebar-sub-header"><a href="/TOOLS/SOLUTION/JS设计模式总结.html#装饰器模式" class="sidebar-link">装饰器模式</a></li><li class="sidebar-sub-header"><a href="/TOOLS/SOLUTION/JS设计模式总结.html#适配器模式" class="sidebar-link">适配器模式</a></li><li class="sidebar-sub-header"><a href="/TOOLS/SOLUTION/JS设计模式总结.html#代理模式" class="sidebar-link">代理模式</a></li><li class="sidebar-sub-header"><a href="/TOOLS/SOLUTION/JS设计模式总结.html#策略模式" class="sidebar-link">策略模式</a></li></ul></li><li><a href="/TOOLS/SOLUTION/rem适配方案.html" class="sidebar-link">rem适配方案</a></li><li><a href="/TOOLS/SOLUTION/postcss适配方案.html" class="sidebar-link">postcss适配方案.</a></li><li><a href="/TOOLS/SOLUTION/与移动端的交互.html" class="sidebar-link">与移动端的交互</a></li><li><a href="/TOOLS/SOLUTION/H5在IOS上的奇怪问题汇总.html" class="sidebar-link">H5在IOS上的奇怪问题汇总</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🌏链接</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="简单工厂模式"><a href="#简单工厂模式" class="header-anchor">#</a> 简单工厂模式</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">User</span><span class="token punctuation">(</span><span class="token parameter">name <span class="token punctuation">,</span> age<span class="token punctuation">,</span> career<span class="token punctuation">,</span> work</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name
+    <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age
+    <span class="token keyword">this</span><span class="token punctuation">.</span>career <span class="token operator">=</span> career 
+    <span class="token keyword">this</span><span class="token punctuation">.</span>work <span class="token operator">=</span> work
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">Factory</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> career</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> work
+    <span class="token keyword">switch</span><span class="token punctuation">(</span>career<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token string">'coder'</span><span class="token operator">:</span>
+            work <span class="token operator">=</span>  <span class="token punctuation">[</span><span class="token string">'写代码'</span><span class="token punctuation">,</span><span class="token string">'写系分'</span><span class="token punctuation">,</span> <span class="token string">'修Bug'</span><span class="token punctuation">]</span> 
+            <span class="token keyword">break</span>
+        <span class="token keyword">case</span> <span class="token string">'product manager'</span><span class="token operator">:</span>
+            work <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'订会议室'</span><span class="token punctuation">,</span> <span class="token string">'写PRD'</span><span class="token punctuation">,</span> <span class="token string">'催更'</span><span class="token punctuation">]</span>
+            <span class="token keyword">break</span>
+        <span class="token keyword">case</span> <span class="token string">'boss'</span><span class="token operator">:</span>
+            work <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'喝茶'</span><span class="token punctuation">,</span> <span class="token string">'看报'</span><span class="token punctuation">,</span> <span class="token string">'见客户'</span><span class="token punctuation">]</span>
+        <span class="token keyword">case</span> <span class="token string">'xxx'</span><span class="token operator">:</span>
+            <span class="token comment">// 其它工种的职责分配</span>
+            <span class="token operator">...</span>
+            
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">,</span> career<span class="token punctuation">,</span> work<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="抽象工厂模式"><a href="#抽象工厂模式" class="header-anchor">#</a> 抽象工厂模式</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">MobilePhoneFactory</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 提供操作系统的接口</span>
+    <span class="token function">createOS</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;抽象工厂方法不允许直接调用，你需要将我重写！&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 提供硬件的接口</span>
+    <span class="token function">createHardWare</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">&quot;抽象工厂方法不允许直接调用，你需要将我重写！&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 具体工厂继承自抽象工厂</span>
+<span class="token keyword">class</span> <span class="token class-name">FakeStarFactory</span> <span class="token keyword">extends</span> <span class="token class-name">MobilePhoneFactory</span> <span class="token punctuation">{</span>
+    <span class="token function">createOS</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 提供安卓系统实例</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">AndroidOS</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">createHardWare</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 提供高通硬件实例</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">QualcommHardWare</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 定义操作系统这类产品的抽象产品类</span>
+<span class="token keyword">class</span> <span class="token class-name">OS</span> <span class="token punctuation">{</span>
+    <span class="token function">controlHardWare</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'抽象产品方法不允许直接调用，你需要将我重写！'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 定义具体操作系统的具体产品类</span>
+<span class="token keyword">class</span> <span class="token class-name">AndroidOS</span> <span class="token keyword">extends</span> <span class="token class-name">OS</span> <span class="token punctuation">{</span>
+    <span class="token function">controlHardWare</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我会用安卓的方式去操作硬件'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">AppleOS</span> <span class="token keyword">extends</span> <span class="token class-name">OS</span> <span class="token punctuation">{</span>
+    <span class="token function">controlHardWare</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我会用🍎的方式去操作硬件'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">...</span>
+
+
+<span class="token comment">// 定义手机硬件这类产品的抽象产品类</span>
+<span class="token keyword">class</span> <span class="token class-name">HardWare</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 手机硬件的共性方法，这里提取了“根据命令运转”这个共性</span>
+    <span class="token function">operateByOrder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'抽象产品方法不允许直接调用，你需要将我重写！'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 定义具体硬件的具体产品类</span>
+<span class="token keyword">class</span> <span class="token class-name">QualcommHardWare</span> <span class="token keyword">extends</span> <span class="token class-name">HardWare</span> <span class="token punctuation">{</span>
+    <span class="token function">operateByOrder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我会用高通的方式去运转'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">MiWare</span> <span class="token keyword">extends</span> <span class="token class-name">HardWare</span> <span class="token punctuation">{</span>
+    <span class="token function">operateByOrder</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我会用小米的方式去运转'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token operator">...</span>
+
+<span class="token comment">// 这是我的手机</span>
+<span class="token keyword">const</span> myPhone <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FakeStarFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 让它拥有操作系统</span>
+<span class="token keyword">const</span> myOS <span class="token operator">=</span> myPhone<span class="token punctuation">.</span><span class="token function">createOS</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 让它拥有硬件</span>
+<span class="token keyword">const</span> myHardWare <span class="token operator">=</span> myPhone<span class="token punctuation">.</span><span class="token function">createHardWare</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 启动操作系统(输出‘我会用安卓的方式去操作硬件’)</span>
+myOS<span class="token punctuation">.</span><span class="token function">controlHardWare</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// 唤醒硬件(输出‘我会用高通的方式去运转’)</span>
+myHardWare<span class="token punctuation">.</span><span class="token function">operateByOrder</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">class</span> <span class="token class-name">newStarFactory</span> <span class="token keyword">extends</span> <span class="token class-name">MobilePhoneFactory</span> <span class="token punctuation">{</span>
+    <span class="token function">createOS</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 操作系统实现代码</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">createHardWare</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 硬件实现代码</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="单例模式"><a href="#单例模式" class="header-anchor">#</a> 单例模式</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">SingleDog</span> <span class="token punctuation">{</span>
+    <span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'我是一个单例对象'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">static</span> <span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 判断是否已经new过1个实例</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>SingleDog<span class="token punctuation">.</span>instance<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 若这个唯一的实例不存在，那么先创建它</span>
+            SingleDog<span class="token punctuation">.</span>instance <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SingleDog</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 如果这个唯一的实例已经存在，则直接返回</span>
+        <span class="token keyword">return</span> SingleDog<span class="token punctuation">.</span>instance
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> s1 <span class="token operator">=</span> SingleDog<span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> s2 <span class="token operator">=</span> SingleDog<span class="token punctuation">.</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// true</span>
+s1 <span class="token operator">===</span> s2
+</code></pre></div><h2 id="vuex中的单例模式"><a href="#vuex中的单例模式" class="header-anchor">#</a> VueX中的单例模式</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> Vue <span class="token comment">// 这个Vue的作用和楼上的instance作用一样</span>
+<span class="token operator">...</span>
+
+<span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">install</span> <span class="token punctuation">(</span><span class="token parameter">_Vue</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 判断传入的Vue实例对象是否已经被install过Vuex插件（是否有了唯一的state）</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>Vue <span class="token operator">&amp;&amp;</span> _Vue <span class="token operator">===</span> Vue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">!==</span> <span class="token string">'production'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>
+        <span class="token string">'[vuex] already installed. Vue.use(Vuex) should be called only once.'</span>
+      <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 若没有，则为这个Vue实例对象install一个唯一的Vuex</span>
+  Vue <span class="token operator">=</span> _Vue
+  <span class="token comment">// 将Vuex的初始化逻辑写进Vue的钩子函数里</span>
+  <span class="token function">applyMixin</span><span class="token punctuation">(</span>Vue<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="装饰器模式"><a href="#装饰器模式" class="header-anchor">#</a> 装饰器模式</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 装饰器函数，它的第一个参数是目标类</span>
+<span class="token keyword">function</span> <span class="token function">classDecorator</span><span class="token punctuation">(</span><span class="token parameter">target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    target<span class="token punctuation">.</span>hasDecorator <span class="token operator">=</span> <span class="token boolean">true</span>
+    <span class="token keyword">return</span> target
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 将装饰器“安装”到Button类上</span>
+@classDecorator
+<span class="token keyword">class</span> <span class="token class-name">Button</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Button类的相关逻辑</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 验证装饰器是否生效</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Button 是否被装饰了：'</span><span class="token punctuation">,</span> Button<span class="token punctuation">.</span>hasDecorator<span class="token punctuation">)</span>
+</code></pre></div><h2 id="适配器模式"><a href="#适配器模式" class="header-anchor">#</a> 适配器模式</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// Ajax适配器函数，入参与旧接口保持一致</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">AjaxAdapter</span><span class="token punctuation">(</span><span class="token parameter">type<span class="token punctuation">,</span> url<span class="token punctuation">,</span> data<span class="token punctuation">,</span> success<span class="token punctuation">,</span> failed</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> type <span class="token operator">=</span> type<span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">let</span> result
+    <span class="token keyword">try</span> <span class="token punctuation">{</span>
+         <span class="token comment">// 实际的请求全部由新接口发起</span>
+         <span class="token keyword">if</span><span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'GET'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            result <span class="token operator">=</span> <span class="token keyword">await</span> HttpUtils<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>type <span class="token operator">===</span> <span class="token string">'POST'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            result <span class="token operator">=</span> <span class="token keyword">await</span> HttpUtils<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span>url<span class="token punctuation">,</span> data<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 假设请求成功对应的状态码是1</span>
+        result<span class="token punctuation">.</span>statusCode <span class="token operator">===</span> <span class="token number">1</span> <span class="token operator">&amp;&amp;</span> success <span class="token operator">?</span> <span class="token function">success</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token operator">:</span> <span class="token function">failed</span><span class="token punctuation">(</span>result<span class="token punctuation">.</span>statusCode<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 捕捉网络错误</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>failed<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">failed</span><span class="token punctuation">(</span>error<span class="token punctuation">.</span>statusCode<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 用适配器适配旧的Ajax方法</span>
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">Ajax</span><span class="token punctuation">(</span><span class="token parameter">type<span class="token punctuation">,</span> url<span class="token punctuation">,</span> data<span class="token punctuation">,</span> success<span class="token punctuation">,</span> failed</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">await</span> <span class="token function">AjaxAdapter</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span> url<span class="token punctuation">,</span> data<span class="token punctuation">,</span> success<span class="token punctuation">,</span> failed<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="代理模式"><a href="#代理模式" class="header-anchor">#</a> 代理模式</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">addAll</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'进行了一次新计算'</span><span class="token punctuation">)</span>
+    <span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">const</span> len <span class="token operator">=</span> arguments<span class="token punctuation">.</span>length
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        result <span class="token operator">+=</span> arguments<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> result
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 为求和方法创建代理</span>
+<span class="token keyword">const</span> proxyAddAll <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment">// 求和结果的缓存池</span>
+    <span class="token keyword">const</span> resultCache <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 将入参转化为一个唯一的入参字符串</span>
+        <span class="token keyword">const</span> args <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>arguments<span class="token punctuation">,</span> <span class="token string">','</span><span class="token punctuation">)</span>
+        
+        <span class="token comment">// 检查本次入参是否有对应的计算结果</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>args <span class="token keyword">in</span> resultCache<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 如果有，则返回缓存池里现成的结果</span>
+            <span class="token keyword">return</span> resultCache<span class="token punctuation">[</span>args<span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> resultCache<span class="token punctuation">[</span>args<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">addAll</span><span class="token punctuation">(</span><span class="token operator">...</span>arguments<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="策略模式"><a href="#策略模式" class="header-anchor">#</a> 策略模式</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 定义一个询价处理器对象</span>
+<span class="token keyword">const</span> priceProcessor <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">pre</span><span class="token punctuation">(</span><span class="token parameter">originPrice</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>originPrice <span class="token operator">&gt;=</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> originPrice <span class="token operator">-</span> <span class="token number">20</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> originPrice <span class="token operator">*</span> <span class="token number">0.9</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">onSale</span><span class="token punctuation">(</span><span class="token parameter">originPrice</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>originPrice <span class="token operator">&gt;=</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> originPrice <span class="token operator">-</span> <span class="token number">30</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> originPrice <span class="token operator">*</span> <span class="token number">0.8</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">back</span><span class="token punctuation">(</span><span class="token parameter">originPrice</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>originPrice <span class="token operator">&gt;=</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> originPrice <span class="token operator">-</span> <span class="token number">50</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> originPrice<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">fresh</span><span class="token punctuation">(</span><span class="token parameter">originPrice</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> originPrice <span class="token operator">*</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>to be continued</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/TOOLS/TOOL/使用NRM管理NPM镜像源.html" class="prev">
+        使用NRM管理NPM镜像源
+      </a></span> <span class="next"><a href="/TOOLS/SOLUTION/rem适配方案.html">
+        rem适配方案
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.6cedf5e5.js" defer></script><script src="/assets/js/3.2c4a51d3.js" defer></script><script src="/assets/js/43.7c335d33.js" defer></script>
+  </body>
+</html>
