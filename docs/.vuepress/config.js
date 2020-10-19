@@ -59,10 +59,10 @@ module.exports = {
             "JS/科学计算",
             "JS/MD5加密",
             "JS/深浅拷贝",
-            "JS/更多",
             ["JS/封装cookie操作", "封装cookie操作"],
             ["JS/localStorage封装", "localStorage封装"],
             ["JS/完整axios封装含token", "完整axios封装含token"],
+            "JS/更多",
             
           ]
         },
