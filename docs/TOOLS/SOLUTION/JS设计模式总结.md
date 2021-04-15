@@ -50,6 +50,10 @@ class MobilePhoneFactory {
 // 具体工厂继承自抽象工厂
 class FakeStarFactory extends MobilePhoneFactory {
     createOS() {
+
+        createOs(){
+
+        }
         // 提供安卓系统实例
         return new AndroidOS()
     }
@@ -157,9 +161,7 @@ export function install (_Vue) {
   // 判断传入的Vue实例对象是否已经被install过Vuex插件（是否有了唯一的state）
   if (Vue && _Vue === Vue) {
     if (process.env.NODE_ENV !== 'production') {
-      console.error(
-        '[vuex] already installed. Vue.use(Vuex) should be called only once.'
-      )
+      console.error('[vuex] already installed. Vue.use(Vuex) should be called only once.')
     }
     return
   }

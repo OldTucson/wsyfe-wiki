@@ -1,5 +1,5 @@
 module.exports = {
-  title: "WSY-FE-WIKI",
+  title: "TUCSON-WIKI",
   base: "/",
   dest: "public",
   plugins: ['@vuepress/back-to-top'],
@@ -22,7 +22,11 @@ module.exports = {
       {
         text: "项目",
         link: "/PROJECT/网商搜小程序/小程序开发复盘"
-      }
+      },
+      {
+        text: "关于我",
+        link: "/PROJECT/网商搜小程序/小程序开发复盘"
+      },
     ],
     sidebarDepth: 1,
     sidebar: {
